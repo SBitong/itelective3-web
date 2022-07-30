@@ -1,2 +1,10 @@
+![LOGO](https://github.com/SBitong/itelective3-web/blob/main/UniversitySeal240px.png "ADDU Logo")
 # Ateneo de Davao University - School of Arts and Sciences
-Repo specifically for IT Elective 3
+
+### Frameworks Used:
+* MEAN-MongoDB
+* Express
+* Angular
+* Node
+
+## ATTENDANCE MONITORING SYSTEM
