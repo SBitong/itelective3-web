@@ -4,12 +4,14 @@
 
 
 ### Frameworks Used:
-
-#### MEAN
-* MongoDB
+<img src="https://github.com/SBitong/itelective3-web/blob/main/MongoDB_Logo.svg.png" width="100"/> <img src="https://github.com/SBitong/itelective3-web/blob/main/2048px-Angular_full_color_logo.svg.png" width="100"/>
+ <img src="https://github.com/SBitong/itelective3-web/blob/main/Expressjs.png" width="100"/><img src="https://github.com/SBitong/itelective3-web/blob/main/nodejs-1-logo.png" width="100"/>
+ 
+#### M.E.A.N.
+* MongoDB 
 * Express
 * Angular
-* Node
+* Node 
 
 ## ATTENDANCE MONITORING SYSTEM
 ![SAMPLE-PHOTO](https://github.com/SBitong/itelective3-web/blob/main/3-Figure5.1-1.png "Sample photo of the system")
