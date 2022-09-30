@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- <style>
+        .header{
+            height: 100vh;
+            width: 100%;
+            background-image: url('https://wallpapercave.com/wp/WSjKlp7.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style> -->
+</head>
+<body>
+    
+   <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-warning" href="#">WEATHER FORECAST</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="/other">Other</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success btn-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div class="container text-center pt-5 pb-2">
+        <div class="row">
+          <div class="col">           
+          </div>
+          <div class="col">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img src="https://cdn.britannica.com/73/3473-004-6E573BFA/Flag-Philippines.jpg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= weather[0]["location"]["name"] %></h5>
+                  <p class="card-text">
+                           
+                </p>    
+                <p class="card-text">
+                    <%= weather[0]["location"]["lat"] %>°
+                    <%= weather[0]["location"]["long"] %>°
+                </p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Weather Forecast</a>
+                </div>
+              </div>           
+          </div>
+          <div class="col">            
+          </div>
+        </div>
+      </div>
+      <div class="container text-center pt-3">
+        <div class="row">
+          <div class="col">
+            <div class="card mx-auto" style="width: 15rem;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163657.png" class="card-img-top p-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> <%= weather[0]["current"]["day"]%></h5>
+                  <p class="card-text">
+                    <%= weather[0]["current"]["date"]%>
+               <br>
+                Low: <%= weather[0]["forecast"][0]["low"] %>°C | High: <%= weather[0]["forecast"][0]["high"] %>°C
+                </p>
+                
+                </div>
+              </div>
+          
+          </div>
+          <div class="col">
+            <div class="card mx-auto" style="width: 15rem;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" class="card-img-top p-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= weather[0]["forecast"][1]["day"]%></h5>
+                  <p class="card-text">
+                    <%= weather[0]["forecast"][1]["date"]%>
+                   <br>
+                    Low: <%= weather[0]["forecast"][1]["low"] %>°C | High: <%= weather[0]["forecast"][1]["high"] %>°C
+                </p>
+                
+                </div>
+              </div>
+            
+          </div>
+          <div class="col">
+            <div class="card mx-auto" style="width: 15rem;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163657.png" class="card-img-top p-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= weather[0]["forecast"][2]["day"]%></h5>
+                  <p class="card-text">
+                    <%= weather[0]["forecast"][2]["date"]%>
+                   <br>
+                    Low: <%= weather[0]["forecast"][2]["low"] %>°C | High: <%= weather[0]["forecast"][2]["high"] %>°C
+                </p>
+                
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card mx-auto" style="width: 15rem;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" class="card-img-top p-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= weather[0]["forecast"][3]["day"]%></h5>
+                  <p class="card-text">
+                    <%= weather[0]["forecast"][3]["date"]%>
+                   <br>
+                    Low: <%= weather[0]["forecast"][3]["low"] %>°C | High: <%= weather[0]["forecast"][3]["high"] %>°C
+                </p>
+                
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card mx-auto" style="width: 15rem;">
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" class="card-img-top p-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= weather[0]["forecast"][4]["day"]%></h5>
+                  <p class="card-text">
+                    <%= weather[0]["forecast"][4]["date"]%>
+                   <br>
+                    Low: <%= weather[0]["forecast"][4]["low"] %>°C | High: <%= weather[0]["forecast"][4]["high"] %>°C
+                </p>
+                
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><%= weather[0]["location"]["name"] %></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>
+                Timezone: GMT+<%= weather[0]["location"]["timezone"]%>
+                <br>
+                Alert: <%= weather[0]["location"]["alert"]%>
+                <br>
+                Degree Type: °<%= weather[0]["location"]["degreetype"]%>
+                <br>
+                Longitude: <%= weather[0]["location"]["long"] %>°
+                <br>
+                Latitude: <%= weather[0]["location"]["lat"] %>°
+
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>

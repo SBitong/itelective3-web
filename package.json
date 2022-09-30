@@ -1,0 +1,26 @@
+{
+  "name": "itelective3-web",
+  "version": "1.0.0",
+  "description": "![LOGO](https://github.com/SBitong/itelective3-web/blob/main/UniversitySeal240px.png \"ADDU Logo\")\r # Ateneo de Davao University - School of Arts and Sciences",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SBitong/itelective3-web.git"
+  },
+  "author": "SBitong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SBitong/itelective3-web/issues"
+  },
+  "homepage": "https://github.com/SBitong/itelective3-web#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20",
+    "weather-js": "^2.0.0"
+  }
+}
