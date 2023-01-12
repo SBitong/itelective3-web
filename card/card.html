@@ -5,20 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>My Card</title>
 </head>
 <body class="bg-neutral-600">
    <div class="container card bg-white mx-auto my-10 grid grid-cols-2 rounded-lg">
         <div class="container text-center bg-teal-400 rounded-l-lg">
             <div>
-                <img class="rounded-lg mx-auto my-10" src="/card/images/S8_Alex_Williams.jpg" alt="" style="height: 400px; ">
-                <h1>Alex William</h1>
-                <h6>UI Developer</h6>
+                <img class="rounded-lg mx-auto my-10" src="/card/images/S8_Alex_Williams.jpg" alt="" style="height: 300px; ">
+                <h1 class="font-bold text-lg text-white">Stian Trond Bitong</h1>
+                <h6 class="text-white">UI Developer</h6>
+                <br>
             </div>
             
         </div>
         <div class="container">
-            <h3 class="font-bold my-10 pl-5">INFORMATION</h3>
+            <h3 class="font-bold mt-10 mb-2 pl-5 text-4xl">INFORMATION</h3>
+            <div class="w-full border-b border-gray-300 mb-3"></div>           
+            <div class="container grid grid-cols-2">
+                <div class="container">
+                    <h1 class="mx-5 text-lg font-bold">Email</h1>
+                    <h1 class="mx-5">stianbitong69@gmail.com</h1>
+                </div>
+                <div class="container">
+                    <h1 class="mx-5 text-lg font-bold">Phone</h1>
+                    <h1 class="mx-5">+639665696441</h1>
+                </div>               
+            </div>
+            <br>
+            <h3 class="font-bold mt-10 mb-2 pl-5 text-4xl">PROJECTS</h3>
+            <div class="w-full border-b border-gray-300 mb-3"></div>
+            <div class="container grid grid-cols-2">
+                <div class="container">
+                    <h1 class="mx-5 text-lg font-bold">Recent</h1>
+                    <h1 class="mx-5">Lorem Ipsum</h1>
+                    <h1 class="mx-5">Dolor sit amet.</h1>
+                </div>
+                <div class="container">
+                    <h1 class="mx-5 text-lg font-bold">Most Viewed</h1>
+                    <h1 class="mx-5">Dolor sit amet.</h1>
+                </div>               
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <button class="mx-3 bg-teal-400 hover:bg-teal-600 text-white font-bold py-4 px-4 border border-teal-500 rounded">
+                    <img src="/card/images/ico-fb.png" alt="" style="height: 30px;">
+                </button>
+                <button class="mx-3 bg-teal-400 hover:bg-teal-600 text-white font-bold py-4 px-4 border border-teal-500 rounded">
+                    <img src="/card/images/ico-twit.png" alt="" style="height: 30px;">
+                </button>
+                <button class="mx-3 bg-teal-400 hover:bg-teal-600 text-white font-bold py-4 px-4 border border-teal-500 rounded">
+                    <img src="/card/images/ico-insta.png" alt="" style="height: 30px;">
+                </button>
+            </div>
+            <br>
+            <br>
+            <br>
         </div>     
    </div>
 </body>
